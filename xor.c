@@ -2,8 +2,28 @@
 
 /* 
 Simple XOR cipher 
-from Schneier's book, Applied Cryptography, 2nd ed. 
-Usage: crypto key input_file output_file 
+from Schneier's book, Applied Cryptography, 2nd ed.
+
+Compile:
+
+$ gcc xor.c -o xor 
+
+Usage for encoding and decoding:
+1) Encode: 
+
+$ ./xor.exe key plaintext ciphertext
+
+where key is a string whose length is >= 1 byte, plaintext a file containing a string
+and ciphertext is the file that will containt the result of the xor between the key and the 
+plaintext.
+
+2) Decode:
+
+$ ./xor.exe key ciphertext xoroutput
+
+xoroutput will contain the xor between the key and the ciphertext that will be equal to the
+original plaintext.
+ 
 */
 
 void main (int argc, char *argv[]) {
