@@ -3,6 +3,8 @@
 /* 
 Simple XOR cipher 
 from Schneier's book, Applied Cryptography, 2nd ed.
+This application provides a xor function that can be used to implement the one-time pad cipher.
+The xor function can be used to encode and decode a string using the same key.
 
 Compile:
 
